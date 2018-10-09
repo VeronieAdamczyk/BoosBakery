@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Boo's Bakery</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale = 1"/>
+        
+        <!-- CSS Styling sheets -->
+        
+        <!--******** Font Awesome CDN CSS versoin 5.2.0********-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        <!--- Google Fonts --->
+        
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+        
+        <!----- Link to  Custom CSS Styling ----->
+        
+        <link rel="stylesheet" type="text/css" href="Resources/CSS/main.css"/>
+        
+    </head>
+    
+    
+    <body>
+        
+<!-- ******** Start of Home Section ******** -->        
+        <section id="home" class="homeBgImg">
+            
+         
+            <!-- ** Company Logo **-->   
+            <div class="bbLogo"> 
+                <a href="#home"><img src="Resources/img/logo.jpg"  height="70" width="70" alt ="company logo"/></a>
+            </div>
+            
+            <!--** Navigation Bar **-->
+            <header>
+                <div class="navBar">
+                   
+                <a href="javascript:void(0);" class="icon" onclick="mobileMenu()"><i class="fas fa-bars"></i></a>
+                    <nav>
+                        <ul id ="ddMenu"class="menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Boo</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#new">Whats New</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <div id="homeHead"> Boo's <br>Bakery</div>
+            
+        </section>
+<!-- ******** End of Home Section ******** -->        
+        
+<!-- ******** Start of About Section ******** -->         
+        <section id="about">
+            <div class="secHead">About Boo</div>
+            <div class="secInfo"> Welcome to Boo's Bakery </div>
+            <div class="secInfo"> Simple home made baking with a personal touch</div>
+            <p>
+            Hi and welcome to Boo’s Bakery.  My name is Sam and I have always had a passion for baking. I love designing cakes and seeing them come to life in front of my eyes. I often create cakes and other baked goods for family members, friends and work events. Hearing that people enjoy my creations has encouraged me to share my passion with others and bring you Boo’s Bakery. <br><br>
+            Boo's Bakery is a new bespoke cake baking company based in Milton Keynes. Being a new company, we specialise in keeping it simple but still delicious. Looking for a tray bake for a birthday or cookies to take into work? Look no further Boo's Bakery is the place for you.<br><br>
+            We may like to keep things simple here at Boo’s but if you are looking for something a little more special then have no fear! Do you have a birthday or other special event coming up?  We are also able to create bespoke cakes for you to make the day extra special. Just take a look at our Gallery below to see past creations for a little inspiration. Contact us using the contact form on the contact page and we will get back to you to start discussing your dream creation. 
+            </p>
+        </section>
+<!-- ******** End of About Section ******** -->        
+ 
+<!-- ******** Start of Products Section ******** --> 
+        <section id="products">
+            
+            <div class="secHead">Products</div>
+            
+            <div class="secInfo"> Please find our standard products that we are able to create for you. Please contact us with the product and quantity needed and we will get back to you regarding your order.  </div>
+            <div class="prods">
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/cookies.jpg" height ="275" width="225" alt ="Chocolate Chip Cookies" />
+                </figure>
+                <figcaption>
+                    Chocolate Chip Cookies <br>
+                    <div class="popup" onclick="prodPopUp1()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup1">A simple but tasty batch of chocolate chip cookies. Available in batches of 12</span>
+                    </div>
+                </figcaption>   
+            </article> 
+                <article>
+                <figure> 
+                    <img src="Resources/img/gallery/bisc2.jpg" height ="275" width="225" alt ="Chocolate Dipped Shortbread" />
+                </figure>
+                <figcaption>
+                    Chocolate Dipped Shortbread<br>
+                    <div class="popup" onclick="prodPopUp2()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup2">A buttery, crumbly shortbread dipped in milk chocolate. Available in batches of 12</span>
+                    </div>
+                </figcaption>   
+            </article>
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/rroad.jpg" height ="275" width="225" alt ="Malteaser Chocolate Crispy Cakes" />
+                </figure>
+                <figcaption>
+                    Malteaser Chocolate Crispy Road Cakes<br>
+                    <div class="popup" onclick="prodPopUp3()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup3">A combination of a rocky road slab and rice crispy cake brings us our Malteaser Chocolate Crispy Road Cakes. Available in a 35cm x 24.5cm sheet for you to cut into your own portions</span>
+                    </div>
+                </figcaption>   
+            </article>    
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/bisc4.jpg" height ="275" width="225" alt ="Chocolate Bourbons" />
+                </figure>
+                <figcaption>
+                    Chocolate Bourbons<br>
+                    <div class="popup" onclick="prodPopUp4()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup4">A classic for any biscuit lover. Why not also try our chocolate covered Bourbon for that extra chocolatey fix? Available in batches of 24.</span>
+                    </div>
+                </figcaption>   
+            </article>
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/bisc5.jpg" height ="275" width="225" alt ="Custard Creams" />
+                </figure>
+                <figcaption>
+                    Custard Creams<br>
+                    <div class="popup" onclick="prodPopUp5()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup5">A classic for any biscuit lover. Available in batches of 24.</span>
+                    </div>
+                </figcaption>   
+            </article>
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/jaffa.jpg" height ="275" width="225" alt ="Jaffa Cakes" />
+                </figure>
+                <figcaption>
+                    Jaffa Cakes<br>
+                    <div class="popup" onclick="prodPopUp6()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup6">Is it a biscuit? Is it a cake? Its up to you but either way they taste just as good. Available in batches of 12.</span>
+                    </div>
+                </figcaption>   
+            </article>
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/swroll.jpg" height ="275" width="225" alt ="Swiss Roll" />
+                </figure>
+                <figcaption>
+                    Mini Swiss Rolls <br>
+                    <div class="popup" onclick="prodPopUp7()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup7">Take yourself back to childhood parties with these chocolatey Mini Swiss rolls. Available in batches of 6.</span>
+                    </div>
+                </figcaption>   
+            </article>    
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/cake1.jpg" height ="275" width="225" alt ="Chocolate Orange Slice" />
+                </figure>
+                <figcaption>
+                    Chocolate Orange Slices <br>
+                    <div class="popup" onclick="prodPopUp8()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup8">A rich chocolate cake layerd with a sweet orange curd topped with melted chocolate, perfect for all you chocolate orange lovers. Available in a 35cm x 24.5cm sheet for you to cut into your own portions.</span>
+                    </div>
+                </figcaption>   
+            </article>
+            <article>
+                <figure> 
+                    <img src="Resources/img/gallery/sroll2.jpg" height ="275" width="225" alt ="Sausage Rolls" />
+                </figure>
+                <figcaption>
+                    Sausage Rolls <br>
+                    <div class="popup" onclick="prodPopUp9()"><i class="fas fa-info-circle"></i>
+                    <span class="popuptext" id="myPopup9">A savoury relief from the sweet goods before it. A perfect pork sausage roll. Available in bite size batches of 12 or if your feeling particularly pekish larger sizes are available in a batch of 6.</span>
+                    </div>
+                </figcaption>   
+            </article>    
+            </div>
+            
+        </section>
+<!-- ******** End of Products Section ******** -->         
+        
+<!-- ******** Start of Gallery Section ******** -->         
+        <section id="gallery">
+            <div class="secHead">Gallery</div>
+            <div class="secInfo"> Want a bespoke cake made by us? Here a some images of cakes that have been made in the past to give you some inspiration.</div>
+            
+            <img id="galImg" src="Resources/img/galImg.png" height="auto" width="320" alt="Gallery Collage">
+            <div class="secInfo"> All of our cakes are made using our <strong>Chocolate Mud Cake </strong>recipie. Should you want any other flavour then please specify on contact.</div>
+        </section>
+<!-- ******** End of Gallery Section ******** -->        
+        
+<!-- ******** Start of What's New Section ******** -->         
+        <section id="new">
+            <div class="secHead">What's New</div>
+            <div class="secInfo"> Want to know whats new with us?</div>
+            <p>Check back in with us soon to see what's new</p>
+        </section>
+<!-- ******** End of What's New Section ******** -->        
+        
+<!-- ******** Start of Contact Section ******** -->         
+        <section id="contact">
+            <div class="secHead">Contact Us</div>
+            <div class="secInfo"> Here at Boo's we'd love to be a part of your special event.</div>
+            <div class="secInfo">Please use the contact form below to contact us. Please give us a brief description of what you are looking for and we will get back to you as soon as we can.</div>
+            <p><em>Please make us aware of any dietary requirements when first contacting us</em></p>
+           <div id="contactForm">
+            <form action="mailto:veronie.adamczyk@icloud.com" method="post" enctype="text/plain">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                <label for="phone">Contact Number</label><br>
+                <input type="text" id="phone" name="number" placeholder="Your contact number.."><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Your email address.."><br>
+                <label for="email">Date Required</label><br>
+                <input type="date" id="date" name="Date required - yyyy/mm/dd"><br>
+                <label for="subject">Cake Request</label><br>
+                <textarea id="request" name="request" placeholder="Write something.." style="height:170px"></textarea> <br>  
+                <input type="submit" value="Submit">
+            </form>
+            </div>    
+        </section>
+<!-- ******** End of Contact Section ******** -->         
+        
+<!-- ******** Start of Footer Section ******** -->         
+        <section id="footer">
+            <footer>
+               <i class="far fa-copyright"></i> Designed and Created by Veronie Adamczyk for Boo's Bakery 
+            </footer>
+        </section>
+<!-- ******** Start of Footer Section ******** -->  
+        <script src="Resources/JS/main.js"></script>
+    </body>
+
+</html>
