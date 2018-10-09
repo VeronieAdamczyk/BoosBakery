@@ -1,0 +1,513 @@
+/* checking CSS linked to HHTML */
+/*
+body{
+    background: red;
+}*/
+
+/* Custom Fonts*/
+
+@font-face {
+    font-family:'derivia';
+    src: url('../../Vendors/Fonts/derivia-webfont.eot');
+    src: url('../../Vendors/Fonts/derivia-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/derivia-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/derivia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'medhurst';
+    src: url('../../Vendors/Fonts/medhurst-regular-webfont.eot');
+    src: url('../../Vendors/Fonts/medhurst-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/medhurst-regular-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/medhurst-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'napoleon';
+    src: url('../../Vendors/Fonts/napoleon-light-webfont.eot');
+    src: url('../../Vendors/Fonts/napoleon-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Vendors/Fonts/napoleon-light-webfont.woff2') format('woff2'),
+         url('../../Vendors/Fonts/napoleon-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Universal Styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ededed;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* Home Page Styling */
+
+
+#home{
+ 
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(193, 179, 192, 0.87), rgba(193, 179, 192, 0.87)), url("../img/cCreams.jpg") center top no-repeat;
+    background-size: cover;
+    z-index: -5;
+}
+
+
+.navBar{
+    background-image: url(../img/NavBar.jpg);
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:cover;
+    background-attachment: fixed;
+    position: fixed;
+    width:100%;
+    height: 80px;
+    z-index: 10;
+    
+}
+
+.menu{
+    display: none;
+    background-image: url(../img/NavBar.jpg);
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.menu a{
+    color: #887186;
+    font-size:0.75em;
+    font-family: 'Slabo 27px', serif;
+    font-weight: 800;
+    
+}
+
+nav{
+    text-align: center;
+}
+
+#ddMenu {
+    padding: 0;
+}
+
+.fa-bars{
+    color: #887186;
+    font-size: 2em;
+    margin-left: 85vw;
+    margin-top: 3.5vh;
+}
+
+
+.bbLogo{
+    position: absolute;
+    width: 40px;
+    top:3px;
+    left:7px;
+    z-index: 70;
+    position: fixed;
+}
+
+
+
+#homeHead{
+    font-family:'derivia';
+    position: absolute;
+    margin-top: 65vh;
+    margin-left: 15vw;
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+    color: #484848;
+}
+
+
+/* Main Content Styling */
+
+.secHead{
+    font-family: 'medhurst';
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5vh;
+    padding-top: 15vh;
+    z-index: -5;
+}
+.secInfo{
+    font-family: 'medhurst';
+    font-size: .85em;
+    text-align: center;
+    margin-top: 1vh;
+    padding-top: 1vh;
+    z-index: -5; 
+}
+
+
+p {
+    
+    font-family: 'Slabo 27px', serif;
+    font-size: .75em;
+    text-align: center;
+    padding-top: 3vh;
+    margin: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+figcaption {
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.9em;  
+    font-weight: 200;
+}
+
+
+/* Products Section */
+
+#products .secInfo{
+    padding-bottom: 3.5vh;
+}
+article{
+    text-align: center;
+}
+
+.prods{
+    
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    height: auto;
+    
+}
+
+article{
+    margin:1%;
+    text-align: center;
+    height: auto;
+    width:auto;
+}
+
+figcaption{
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 0 3px;
+    
+}
+
+/* Product info pop ups */
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgba(136, 113, 134, 0.9);
+    color: #ededed;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 35%;
+    margin-left: -80px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.75em;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #ededed transparent transparent transparent;
+
+}
+
+/* allows pop up to show when infor button clicked */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+
+/* (fade in the popup) */
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* Contact us section */
+
+form{
+    width: 300px;
+    margin: 3vh 4vw;
+}
+label{
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.75em;
+    }
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;   
+    border: 2px solid rgba(136, 113, 134, 0.83); 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+    font-family: 'Slabo 27px', serif;
+}
+input[type=date], select, textarea {
+    width: 100%; 
+    padding: 12px;   
+    border: 2px solid rgba(136, 113, 134, 0.83); 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+    font-family: 'Slabo 27px', serif;
+}
+
+input[type=submit] {
+    background-color: rgba(136, 113, 134, 0.83);
+    color: #ededed;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Slabo 27px', serif;
+}
+
+/* Footer Styling*/
+#footer{
+    background-image: url(../img/NavBar.jpg);
+    background-repeat: no-repeat;
+    background-position:center 0;
+    background-size:cover;
+    background-attachment: fixed;
+    width:100%;
+    height: 50px;
+    font-family: 'Slabo 27px', serif;
+    font-size: 0.5em;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+/*For midsize iphones */
+
+@media only screen and (min-width: 375px){
+    #galImg{
+    margin-top: 1vh;
+    padding-top: 1.5vh;
+    margin-left: 5vw;   
+    padding-left: 7vw;    
+}
+    
+}
+
+    /* For Larger Mobile screens*/
+@media only screen and (min-width: 568px){
+    #homeHead{
+    margin-top: 63.5vh;
+    margin-left: 10vw;
+    font-size: 3em;
+}
+
+    .menu a{
+    font-size:0.8em;
+}
+    
+.secInfo{
+    font-size: 1.15em;
+    }
+    
+p {
+    
+    font-size: 1.05em;
+    }
+    
+figcaption {
+    font-size: 1em;  
+    }
+    
+#galImg{
+    width: 560px;
+    margin-top: 1vh;
+    padding-top: 1.5vh;
+}
+    
+#footer{
+    height: 70px;
+    font-size: 0.67em;
+}
+    
+form{
+    width: 350px;
+    margin: 3vh 21vw;
+    }
+    
+    label{
+    font-size: 0.9em;
+    }
+    
+input[type=text], select, textarea, { 
+
+    font-size: 0.9em;
+    
+    }
+    
+input[type=date], select, textarea, { 
+    font-size: 0.9em;
+    
+    }
+
+input[type=submit]{
+    font-size: 0.9em;
+    }
+
+    
+}
+
+     /* For Tablets */ 
+@media only screen and (min-width: 768px){
+
+      .menu a{
+    font-size:0.9em;
+}
+    .fa-bars{
+    font-size: 2.5em;
+    margin-left: 90vw;
+    }
+
+    #galImg{
+    width: 700px;
+    margin-top: 2vh;
+    padding-top: 3vh;
+    margin-left: 4vw;
+    }      
+    
+    #footer{
+    font-size:0.75em;
+    }   
+    
+    form{
+    width: 500px;
+    margin: 3vh 17.5vw;
+    }
+        
+}    
+    
+    
+    
+    /* For Desk Top  */
+@media only screen and (min-width: 1024px){
+ 
+.fa-bars{
+ display: none;
+}
+    
+.menu{
+    display: inline;
+    background-image: none;
+}
+
+.menu li {
+    display: inline;
+    padding:0 3px;
+    margin: 0 2px;
+    color: #C1B3C0;
+}
+
+.menu a {
+    padding: 7.5px;
+    text-align: center;
+    display: inline;
+    font-size: 1.05em;
+    
+
+}
+
+nav{
+text-align: right; 
+margin-top: 15px;
+padding-top: 15px;
+    
+}    
+    
+
+#homeHead{
+    margin-top: 56.5vh;
+    margin-left: 8vw;
+    font-size: 4em;
+}
+
+.secHead{
+    font-size: 3.5em;
+    }
+    
+.secInfo{
+    font-size: 1.35em;
+    }
+    
+p {
+    
+    font-size: 1.25em;
+    }
+    
+figcaption {
+    font-size: 1.15em;  
+    }
+#galImg{
+    width: 800px;
+    margin-top: 2vh;
+    padding-top: 3vh;
+    margin-left: 13vw;
+    padding-left: 4vw;
+    }
+    
+#footer{
+
+    height: 150px;
+    font-size:0.85em;
+    }    
+    
+    form{
+        margin-left: 30.5vw;
+        margin-top: 5vh;
+    }
+}
